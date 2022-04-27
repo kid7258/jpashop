@@ -1,13 +1,11 @@
 package jpabook.jpashop.domain;
 
-import com.sun.tools.corba.se.idl.constExpr.Or;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-public class Member {
+public class Member extends BaseEntity {
     @Id @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "member_id")
     private Long id;
